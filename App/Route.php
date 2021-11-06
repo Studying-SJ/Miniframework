@@ -1,8 +1,11 @@
 <?php
     namespace App;
 
-    class Route{
-        public function initRoutes(){
+    use MF\Init\Bootstrap;
+
+    class Route extends Bootstrap{
+
+        protected function initRoutes(){
             $routes['home'] = [
                 'route' => '/',
                 'controller' => 'indexController',
@@ -13,9 +16,9 @@
                 'controller' => 'indexController',
                 'action' => 'sobreNos'
             ];
+
+            $this->setRoutes($routes);
         }
-        public function getUrl(){
-            return parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-        }
+        
     }
 ?>
