@@ -3,7 +3,7 @@
 <br>
 <h1>----------- Index -----------</h1>
 <?php
-    foreach($this->view->dados as $indice => $valor){
-        echo $valor.'<br>';
+    foreach($this->view->dados as $indice => $produto){
+        echo $produto['id'].' - '.$produto['preco'].' - '.$produto['descricao'].'<br>';
     } 
 ?> 
