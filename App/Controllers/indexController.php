@@ -9,12 +9,12 @@
 
             public function index(){
                 $this->view->dados = ['Samuel', 'Professor', 'Facilitador'];
-                $this->render('index');
+                $this->render('index', 'layout');
             }
 
             public function sobreNos(){
                 $this->view->dados = ['Bonito', 'Diversificado', 'Especial'];
-                $this->render('sobreNos');
+                $this->render('sobreNos', 'layout2');
             }
 
         } 
