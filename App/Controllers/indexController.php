@@ -2,7 +2,7 @@
   namespace App\Controllers;
 
   use MF\Controller\Action;
-  use Mf\Model\Container;
+  use MF\Model\Container;
   use App\Models\Produto;
   use App\Models\Info;
 
