@@ -2,8 +2,7 @@
 <hr>
 <br>
 <h1> ----------- Sobre Nos ----------</h1> 
-<?php
-    foreach($this->view->dados as $indice => $valor){
-        echo $valor.'<br>';
-    } 
-?> 
+<?php foreach($this->view->dados as $indice => $info){ ?>
+    <h1><?php echo $info['titulo'] ?></h1>
+    <p><?php echo $info['descricao']?></p>
+<?php } ?> 
